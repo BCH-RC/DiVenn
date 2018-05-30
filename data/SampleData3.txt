@@ -1,0 +1,38 @@
+Sandy	Perdeep	1
+
+Ashley	Perdeep	2
+
+OldMan	Perdeep	1
+
+Valjean	Labarre	1
+
+
+Valjean	Liang Sun	3
+
+Valjean	Perdeep	5
+
+Marguerite	Valjean	1
+
+Blacheville	Tholomyes	4
+Blacheville	Listolier	4
+Blacheville	Fameuil	4
+Favourite	Tholomyes	3
+Favourite	Listolier	3
+Favourite	Fameuil	3
+Favourite	Blacheville	4
+Dahlia	Tholomyes	3
+Dahlia	Listolier	3
+Dahlia	Fameuil	3
+Dahlia	Blacheville	3
+Dahlia	Favourite	5
+Zephine	Tholomyes	3
+Zephine	Listolier	3
+Zephine	Fameuil	3
+Zephine	Blacheville	3
+Zephine	Favourite	4
+Zephine	Dahlia	4
+Fantine	Tholomyes	3
+Fantine	Listolier	3
+Fantine	Fameuil	3
+Fantine	Blacheville	3
+Fantine	Favourite	4

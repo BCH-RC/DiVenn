@@ -1,0 +1,10 @@
+Fuqi Liao	1	1	1
+Liang Sun	8	1	0
+Sufen Dong	10	1	1
+Nick Krom	1	1	2
+Junil Chang	1	1	1
+Soonil Kwon	1	0	0
+Sandy	1	0	0
+Ashley	2	1	1
+OldMan	1	0	2
+Valjean	1	1	0

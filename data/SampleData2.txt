@@ -1,0 +1,23 @@
+Fuqi Liao	Perdeep	1	2
+Liang Sun	Perdeep	8	1
+Sufen Dong	Perdeep	10	2
+Nick Krom	Perdeep	1	1
+Junil Chang	Perdeep	1	1
+Soonil Kwon	Perdeep	1	0
+Sandy	Perdeep	1	2
+Ashley	Perdeep	2	2
+OldMan	Perdeep	1	1
+Valjean	Labarre	1	3
+Javert	Thenardier	5	3
+Javert	Mme.Thenardier	1	2
+Javert	Cosette	1	1
+Fauchelevent	Valjean	8	1
+Fauchelevent	Javert	1	0
+Bamatabois	Fantine	1	1
+Bamatabois	Javert	1	2
+Bamatabois	Valjean	2	0
+Perpetue	Fantine	1	1
+Simplice	Perpetue	2	2
+Simplice	Valjean	3	3
+Simplice	Fantine	2	2
+Simplice	Javert	1	3

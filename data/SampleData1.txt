@@ -1,0 +1,33 @@
+Junil Chang	Perdeep	1	0
+Soonil Kwon	Perdeep	1	1
+Sandy	Perdeep	1	0
+Ashley	Perdeep	2	0
+OldMan	Perdeep	1	0
+Valjean	Labarre	1	1
+Valjean	Sufen Dong	3	1
+Valjean	Liang Sun	3	1
+Valjean	Perdeep	5	0
+Marguerite	Valjean	1	1
+Mme.deR	Valjean	1	1
+Isabeau	Valjean	1	1
+Gervais	Valjean	1	1
+Listolier	Tholomyes	4	0
+Fameuil	Tholomyes	4	0
+Fameuil	Listolier	4	2
+Blacheville	Tholomyes	4	0
+Blacheville	Listolier	4	2
+Blacheville	Fameuil	4	1
+Favourite	Tholomyes	3	1
+Favourite	Listolier	3	1
+Favourite	Fameuil	3	0
+Favourite	Blacheville	4	0
+Dahlia	Tholomyes	3	1
+Dahlia	Listolier	3	1
+Dahlia	Fameuil	3	0
+Dahlia	Blacheville	3	1
+Dahlia	Favourite	5	1
+Zephine	Tholomyes	3	0
+Zephine	Listolier	3	1
+Zephine	Fameuil	3	1
+Zephine	Blacheville	3	1
+Zephine	Favourite	4	1
