@@ -2,35 +2,16 @@
 
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 <script src="js/md5.js"></script>
-<script src="js/jscolor.js"></script>   
-<script src="js/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>                                                                                     <!--color need-->
+<script src="js/jscolor.js"></script>                                                                                         <!--color need-->
 <!--script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.0/d3.min.js"--><!--/script-->  <!--contextMenu need-->
 <script type="text/javascript" src="js/d3.v4.min.js"> </script>      <!--d3 need-->	
 	
 
 <?php
-//include_once("config.inc.php");
 session_start(); 
 $filenum=$_SESSION['filenum'];	
-//echo $_SESSION['mycolor'][0];
-//echo var_dump($_POST);
-
-//$sql = "SELECT Gene_ID, Gene_Description FROM GeneIDs_tbl WHERE Gene_ID like '%4942%'";
-//$result = mysqli_query($conn, $sql);
-
-//if (mysqli_num_rows($result) > 0) {
-//    // output data of each row
-//    while($row = mysqli_fetch_assoc($result)) {
-//        echo "id: " . $row["Gene_ID"]. " - Description: " . $row["Gene_Description"]. "<br>";
-//    }
-//} else {
-//    echo "0 results";
-//}
-//mysqli_close($conn);
+//echo $filenum;
 
 for($n=0; $n<$filenum; $n++)
 {	
@@ -45,13 +26,7 @@ for($n=0; $n<$filenum; $n++)
 		{
 			$parts=explode("\t",$im_list);
 			//print_r($parts);
-			//$sql = "SELECT Gene_ID, Gene_Description FROM GeneIDs_tbl WHERE Gene_ID like '%".$parts[0]."%'";
-			//$result = mysqli_query($conn, $sql);
-			//$firstrow = mysqli_fetch_assoc($result);
-			//if (firstrow)
-			//	$objectLinks[$n][$key]=(object)array("id"=>$parts[0].":".$firstrow["Gene_Description"],"value"=>$parts[1]);
-			//else
-				$objectLinks[$n][$key]=(object)array("id"=>$parts[0],"value"=>$parts[1]);
+			$objectLinks[$n][$key]=(object)array("id"=>$parts[0],"value"=>$parts[1]);
 		}
 	}	
 } 
@@ -69,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD']== "POST")
 	}
 }
 // get color value from session    
-   for($n=0;$n<$filenum;$n++)
+   for($n=0;$n<8;$n++)
 	{	
 		$mycolors[$n]=$_SESSION['mycolor'][$n];          // get the customer defined node color 
 		$expname[$n]=$_SESSION['exp_name'][$n];         //get the customer defined experiment name
@@ -108,9 +83,9 @@ if ($_SERVER['REQUEST_METHOD']== "POST")
      </tbody> 
  </table> 
  <!--the table below is for change color button-->	
- <table class="changeColor" style="display:none">
+ <table class="changeColor" style="position: absolute; left: 6px; top:56px; z-index: 1000">
  <tr>
-		<td align="left"><form action="<?php echo htmlspecialchars($_SERVER[PHP_SELF]);?>" method="post" enctype="multipart/form-data" id="changeColorForm">
+		<td align="left"><form action="<?php echo htmlspecialchars($_SERVER[PHP_SELF]);?>" method="post" enctype="multipart/form-data">
 
 			<span id="colorchanger" > 
 			
@@ -124,20 +99,8 @@ if ($_SERVER['REQUEST_METHOD']== "POST")
   </table>
   
 <!--the div below is SVG Container-->	  
-<div class="d3container" >
+<div class="container" >
 		<section id="chart" >
-		</section>
-		<div class="panel">
-			<div class="panel-body">
-				<table id="Gene_Info" class="table table-striped" tableindex="-1">
-				<tr>
-					<th>ID</th>
-					<th>Description<th>
-					<th>Pathway</th>
-				</tr>
-				</table>	
-			</div>
-		</div>
 		</section>
 </div>
 
@@ -210,7 +173,10 @@ nodes.push({'id':links[0].source,
 			'group':links[0].value })
 
 for(var i=0;i<links.length;i++)
-{
+{	
+    
+			
+	
 	for(j=0;j<nodes.length;j++)
 	{ 
 		if(links[i].source==nodes[j].id)              //判断所有的source是否存在wether source is exist
@@ -229,13 +195,14 @@ for(var i=0;i<links.length;i++)
 		'group':links[i].value	
 		})
 	}
-	for(j=0;j<nodes.length;j++)
+for(j=0;j<nodes.length;j++)
 	{ 
 	if(links[i].target==nodes[j].id)                //判断所有的target是否存在 wether target node is exist
 	{break;}
 	}	
 	if(j==nodes.length)
-	{  
+	{    
+
 		nodes.push({
 		'id':links[i].target,
 		'group':links[i].value
@@ -244,9 +211,11 @@ for(var i=0;i<links.length;i++)
 	
 }
 
+
 //---------------------------------------------------------------------------------------
 //the contextMenu function
 // contextMenu references from website https://codepen.io/billdwhite/pen/VYGwaZ
+
 
 d3.contextMenu = function (menu, openCallback) {
 
@@ -299,88 +268,78 @@ d3.contextMenu = function (menu, openCallback) {
 var menu = [{
       title: 'hide label',
       action: function(elm, d, i) 
-		{			
+		{
+			
 			d3.select('#'+d.id).selectAll("text").style("display","none"); 
 		}
     }, 
 	{
       title: 'show label',
       action: function(elm, d, i)
-		{			
+		{
+			
 			//console.log('The data for this circle is: ' + d.id);
 			d3.select('#'+d.id).selectAll("text").style("display",""); 
 		}
 	},
-	{
-		title:'hide all',
-		action:function(elm,d,i)
+	 {
+	  title:'hide all',
+	  action:function(elm,d,i)
 		{
-			var f=1;	
+			var f=1;
+	
 		
 			for(i=0;i<nodes.length;i++)
-			{	
-				for(j=0;j<exp_name.length;j++)
-				{	
-					if(nodes[i].id ==exp_name[j])	
-					{	
-						f=2;
-						d3.select("#"+nodes[i].id).selectAll("text").style("display","");       //find all of the parent node ,show the name enven when hide the lable
-						break;
-					}
-				}	
+			{	for(j=0;j<exp_name.length;j++)
+							{	if(nodes[i].id ==exp_name[j])	
+								{	f=2;
+									d3.select("#"+nodes[i].id).selectAll("text").style("display","");       //find all of the parent node ,show the name enven when hide the lable
+									break;
+								}
+							}	
 				if(f==1)
-				{
-					d3.selectAll(".nodes").selectAll("text").style("display","none")   //hide all label  except the parent nodes
-				}			
+					{d3.selectAll(".nodes").selectAll("text").style("display","none")   //hide all label  except the parent nodes
+					}
+			
 			}
+		
+			
 		}
 	 },
 	 {
-		title:'show all',
-		action:function(elm,d,i)
-		{			
+	  title:'show all',
+	  action:function(elm,d,i)
+		{
+			
 			d3.selectAll(".nodes").selectAll("text").style("display",""); 
 		}
 	 },
 	 {
-		title:'rename',
-		action:function(elm,d,i)
+	  title:'rename',
+	  action:function(elm,d,i)
 		{
 			
 			
 		}
-	 },
-	 {
-		title:'Details',
-		action:function(elm,d,i){
-			 ShowNodeDetails(elm,d,i);
-		 }
 	 }
     ]
-	
-function ShowNodeDetails(elm,d,i){
-	
-	$.post('mysql_query.php',{GeneID:d.id},function(result){
-		var tablecontainer = $('#Gene_Info');		
-		
-		var tr=$('<tr>');
-		tr.append('<td>'+d.id+'</td>');
-		tr.append('<td>'+result+'</td>');
-		tr.append('<td></td>')
-		tablecontainer.append(tr);
-		
-		tablecontainer.focus();
-	});	
-}
 // up above is the contextMenu function
 //------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
 window.onload=update();
 
 // hide and show lable function
 function lbstyle(val)
-{
-	var f=1;    //this is just a flag to juge whether it is a parent node
+{var f=1;    //this is just a flag to juge whether it is a parent node
 	if(val==1)
 		{   
 			d3.selectAll(".nodes").selectAll("text").style("display","")    //show all lable
@@ -409,33 +368,47 @@ function lbstyle(val)
 
 function update(){
 
-	d3.select('#colorchanger').selectAll('input').remove();// clear all the old create color element 
-	// create the colorselector element to change color in the graph
-	for(var i=0;i<filenum;i++)
-	{
-		d3.select('#colorchanger').append('input')
+
+
+
+
+d3.select('#colorchanger').selectAll('input').remove();// clear all the old create color element 
+// create the colorselector element to change color in the graph
+for(var i=0;i<filenum;i++)
+{
+	d3.select('#colorchanger').append('input')
 		.attr('class','jscolor{hash:true}')
 		.attr('name','colorselector'+i)
 		.attr('value',mycolor[i])
 		.style('width','60px')
-	} 
+		
+		
+	
+} 
 
-	//draw graph
 
-	var active=d3.select(null);
-	var palette={
-		"stroke-width" : "1.5 px",
-		"gray":"#999",
-		"white":"#fff",
-		"black":"#000000",
-		"blue":"#1574A8",
-		"lightblue":"#E5FFFF"                            //identify the basic color 
-	}
 
-	// the code below is for zoom the graph
-	var margin = 0.95
-    var width = screen.width*margin;//1024; 
-	var height = screen.height*margin;//900; 
+
+
+//draw graph
+
+var active=d3.select(null);
+var palette={
+	"stroke-width" : "1.5 px",
+	"gray":"#999",
+	"white":"#fff",
+	"black":"#000000",
+	"blue":"#1574A8",
+	"lightblue":"#E5FFFF"                            //identify the basic color 
+}
+
+
+
+
+
+ // the code below is for zoom the graph
+    var width = 1024; 
+	var height = 900; 
     
     var zoom=d3.zoom().on("zoom",zoomed).scaleExtent([1 / 2, 4]) ;   
 	var svg = d3.select("#chart")
@@ -447,30 +420,33 @@ function update(){
 				.style("left", 0) 
 				.style("top", 0) 
 				.attr("transform", "translate(0,0)")
-				.attr("scale",[1,10])//
+				 .attr("scale",[1,10])//
 				.call(zoom)
 				.append("g")// this g can transform for zoom.
 				.attr("id","svgZoomContainer")
   
-	// move and zoom functions
-	//--------------------------------------------------
+ // move and zoom functions
+ //--------------------------------------------------
   
 
-	var ZoomScale=1;	
-	var x=0; 
-	var y=0;
+var ZoomScale=1;	
+var x=0; 
+var y=0;
 
 
-	function zoomed()
-	{
-		svg.attr("transform", d3.event.transform)
-		ZoomScale=d3.event.transform.k;
-		x=d3.event.transform.x;
-		y=d3.event.transform.y;
-		console.log(x);
-		//console.log(y);
-	} 
+ function zoomed()
+ {
+	svg.attr("transform", d3.event.transform)
+	ZoomScale=d3.event.transform.k;
+	x=d3.event.transform.x;
+	y=d3.event.transform.y;
+	console.log(x);
+	//console.log(y);
+ }
  
+ 
+   
+  
     d3.select("#moveLeft").on("click", function () {
 		x-=5;
 		y-=0;
@@ -501,10 +477,15 @@ function update(){
 		y=0;
 		ZoomScale=1;
 		d3.select("#svgZoomContainer").attr("transform","translate(" +x+","+y+")scale("+1+")");
-	});
+		});
  //---------------------------------------------
+
+    
+  
 	
 //定义颜色集  identify the colorset
+
+
 
 var a=["#FF0033", "#0066cc" , "#E9F01D"];
  var color = d3.scaleOrdinal() // D3 Version 4            node的颜色  color of nodes
@@ -513,14 +494,18 @@ var a=["#FF0033", "#0066cc" , "#E9F01D"];
 
   //var color2 = d3.scaleOrdinal(d3.schemeCategory20);  // parent节点的颜色  color of parent
 
-var color2=d3.scaleOrdinal()
+
+ 
+
+ var color2=d3.scaleOrdinal()
   .domain([0,1,2,3,4,5,6,7])
   .range(mycolor)
 
+
 var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(100))    //distance for the line length
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(90))    //distance for the line length
     .force("charge", d3.forceManyBody())
-    .force("center", d3.forceCenter(width/3, height/3));
+    .force("center", d3.forceCenter(width/2, height/2));
 
 //画链接线  draw link lines
   
@@ -538,10 +523,6 @@ var simulation = d3.forceSimulation()
 			.style('stroke',function(d){return color(d.value)})
 			.attr("stroke-width",1)
 			.attr("stroke-opacity",1)
-			.enter().append("text")  //yge
-				.text(function(d){return d.x;})
-				.attr("x",function(d){return x(d.x);})
-				.attr("y",function(d){return y(d.y);});
 						
 		}) 
 		.on('mouseout',function(){
@@ -550,8 +531,11 @@ var simulation = d3.forceSimulation()
 				.attr("stroke-width",.8)
 			
 		})
+		
+
+
   
-var circleWidth=[];                   //记录圆点的半径的数组   r of circle
+  var circleWidth=[];                   //记录圆点的半径的数组   r of circle
 for (var i=0;i<nodes.length;i++)
 {	var r=5;                              //设置圆点的初始半径为5px
 	for(var j=0;j<links.length    ;j++)
@@ -610,10 +594,6 @@ for (var i=0;i<nodes.length;i++)
 					.on('mouseover',function(){               // when mouseover change the circle outline color to black
 											d3.select(this)
 											.style('stroke',palette.black)
-											.enter().append("text")  //yge
-												.text(function(d){return d.x;})
-												.attr("x",function(d){return x(d.x);})
-												.attr("y",function(d){return y(d.y);});
 			
 											}) 
 					.on('mouseout',function(){                 // when mouse move out rechange the circle outline color to white
@@ -652,6 +632,9 @@ for (var i=0;i<nodes.length;i++)
 //var lbflag=document.getElementById('lbtxt').value;             //node标签显示不显示的控制	
 var lbflag=2;
 lbstyle(lbflag)	;     //call lbstyle function to show all label or hide all 
+   
+
+
 
   simulation
       .nodes(nodes)
@@ -708,6 +691,8 @@ function dragended(d) {
 
 }
 
+
+
    
 </script>
 
@@ -719,22 +704,20 @@ function dragended(d) {
 //----------------------------------------------------------GUI---------------------------------------------------------------    
 var FizzyText = function() {
   
-  	this.LabelStyle = '2';
+  	this.LabelStyle =function(){};
     this.Save_AS_SVG = function(){save('svg');};
 	this.Save_AS_PNG=function(){save('png');}
 	this.Save_On_Line=function(){saveonline();}
 	this.Change_Color=function(){ChangeNodeColor();}
 	
-	this.color0 =  mycolor[0]||'#ccff99'; // CSS string
-	this.color1 =  mycolor[1]||'#ccffff'; // RGB array
-
-	this.color2 = mycolor[2]||'#99cc33';
-	this.color3 = mycolor[3]||'#ff9900';
-	this.color4 = mycolor[4]||'#9966cc';
-	this.color5 = mycolor[5]||'#0099cc';
-	this.color6 = mycolor[6]||'#663300';
+	this.color0 = mycolor[0]; // CSS string
+	this.color1 = mycolor[1]; // RGB array
+	//this.color2 = mycolor[2]; // RGB with alpha
+	//this.color3 = mycolor[3]; // Hue, saturation, value  	
 };
-	window.onload = function() {
+
+
+window.onload = function() {
 		var text = new FizzyText();
 	  	var gui = new dat.GUI({ width: 360, name:'datGuiControlPanel'});    // define the gui and set width as 360
 
@@ -750,52 +733,53 @@ var FizzyText = function() {
 			f2.add(text,'Save_On_Line').name('Save Online');
 			//f2.open();
 			
-		var f3=gui.addFolder('Color');
-		for(var i=0; i< filenum; i++){
-			f3.addColor(text,'color'+i).name(exp_name[i])
-				.onFinishChange(function(value){updateColorSelector()});
-		}
-			//f3.addColor(text,'color0').name('Experiment 0');
-			//var seedcolor = f3.addColor(text,'color1').name('Experiment 1');
+		var f3=gui.addFolder('Color');		
+			f3.addColor(text,'color0');
+			var seedcolor = f3.addColor(text,'color1');
 			//seedcolor.onChange(function(value){alert("onChange");});
 			//f3.addColor(text,'color2');
-		f3.add(text,'Change_Color').name('Change Color');			
+			f3.add(text,'Change_Color').name('Change Color');
+			
+			//for(var i=0;i<filenum;i++)
+			//{
+			//	f3.addColor(text,'color0','#0000').name('mycolor'+i);
+			//}
 
-	};
+};
 
-	// save svg graph to svg or png
-	function download(source, filename, type) 
-	{
-		var file = new Blob([source], {type: type});
-		if (window.navigator.msSaveOrOpenBlob) // IE10+
-			{window.navigator.msSaveOrOpenBlob(file, filename);}
-		else { // Others
-			if(type=='svg')
-			{
-				var a = document.createElement("a");
-				url = URL.createObjectURL(file);
-				a.href = url;
-				a.download = filename;
-				document.body.appendChild(a);
-				a.click();
-				setTimeout(function() {
-					document.body.removeChild(a);
-					window.URL.revokeObjectURL(url);  
+// save svg graph to svg or png
+function download(source, filename, type) 
+{
+    var file = new Blob([source], {type: type});
+    if (window.navigator.msSaveOrOpenBlob) // IE10+
+		{window.navigator.msSaveOrOpenBlob(file, filename);}
+    else { // Others
+		if(type=='svg')
+		{
+			var a = document.createElement("a");
+			url = URL.createObjectURL(file);
+			a.href = url;
+			a.download = filename;
+			document.body.appendChild(a);
+			a.click();
+			setTimeout(function() {
+				document.body.removeChild(a);
+				window.URL.revokeObjectURL(url);  
 				}, 0); 
-			}
-			else if (type=='png')
-			{
-				var url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(source);  
-				//document.write('<img src="' + url + '"/>');  
-				var image = new Image;  
-				image.src = url;  
+		}
+		else if (type=='png')
+		{
+			 var url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(source);  
+			//document.write('<img src="' + url + '"/>');  
+			var image = new Image;  
+			image.src = url;  
 			
-				var canvas = document.createElement("canvas"); 
-				canvas.width = screen.width;  //1024;  
-				canvas.height = screen.height;//900;  
-				var context = canvas.getContext("2d");  
+			var canvas = document.createElement("canvas"); 
+			canvas.width = 1024;  
+			canvas.height = 900;  
+  			var context = canvas.getContext("2d");  
 			
-				image.onload = function()
+			image.onload = function()
 				{  
 					context.drawImage(image, 0, 0);  
    					var a = document.createElement("a");
@@ -803,46 +787,41 @@ var FizzyText = function() {
 					a.href = canvas.toDataURL("image/png");  
 					a.click();					
 				}	
-			} 
-		}
-	}
+		} 
+    }
+}
 
-	function save(type)
-	{
-		//get svg element.
-		var svg = document.getElementById("svg");
-		//get svg source.
-		var serializer = new XMLSerializer();
-		//var source = serializer.serializeToString(svg.node());
-		var source = serializer.serializeToString(svg);
-		source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
-		//console.log(svg_xml); 
-		var systime=new Date().toLocaleTimeString();
-		if (type=='svg')
+function save(type)
+{
+	//get svg element.
+	var svg = document.getElementById("svg");
+	//get svg source.
+	var serializer = new XMLSerializer();
+	//var source = serializer.serializeToString(svg.node());
+	var source = serializer.serializeToString(svg);
+	source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
+	//console.log(svg_xml); 
+	var systime=new Date().toLocaleTimeString();
+	if (type=='svg')
 		{	
-			var filename='SVG_'+ md5(systime) +'.svg';
+		var filename='SVG_'+ md5(systime) +'.svg';
 		}
-		else if (type=='png')
+	else if (type=='png')
 		{
-			var filename='PNG_'+md5(systime)+'.png';
+		var filename='PNG_'+md5(systime)+'.png';
 		}
-		download(source,filename,type);
-	} 
-	function saveonline()
-	{
-		window.open("https://image.online-convert.com/convert-to-png");
-	}
+	download(source,filename,type);
+ 
 
-	function ChangeNodeColor(){
-		document.getElementById("changeColorForm").submit();
-	}
-	
-	function updateColorSelector(){
-		var elements = document.querySelectorAll("input[type=text]")
-		for (var i = 0; i < elements.length; i++) {
-			document.getElementsByName('colorselector'+i)[0].value = elements[i].value;
-		}
-	}
+} 
+function saveonline()
+{
+window.open("https://image.online-convert.com/convert-to-png");
+}
+
+function ChangeNodeColor(){
+	alert("change color");
+}
 
 </script>
 
