@@ -30,6 +30,7 @@ All modern browsers, such as Safari, Google Chrome, and IE are supported. The re
 
 DiVenn currently accepts two types of input data: 1) Two-column tab separated custom data. For example, gene ID and corresponding pathway data, transcription factors and their regulated downstream genes, microRNAs and corresponding target genes, and so forth. 2) Gene expression data. The first column is gene IDs and the second column is gene expression value. The gene expression value should be either Reads Per Kilobase Million (RPKM) or Fragments Per Kilobase Million (FPKM). Users can select the cut-off value of fold change (default is two-fold change) to define their differentially expressed (DE) genes. Currently, three types of gene IDs : KEGG gene ID, Uniprot gene ID  and NCBI gene ID, are accepted for pathway analysis and all agriGO  supported ID for GO analysis by DiVenn (See table in excel:GO_supported_ID.xlsx).
 [Excel Table](image/tutorial/GO_version.xlsx)
+[Markdown Table](image/tutorial/GO_table.md)
 
 ### 2.   Visualization
 ![Visualization Example](./image/tutorial/force-directed-graph.PNG)
