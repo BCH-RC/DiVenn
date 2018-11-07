@@ -1,11 +1,14 @@
 |Source|Source Format|Version|No. of total GO terms|No. of total GO term relationships|
 |---|---|---|---|---|
 |Gene Ontology Consortium|mySQL|2009-10|31437|54175|
-|Gene Ontology Consortium|mySQL|2016-8|45110|89136
-|
-|Download GO annotation files:||
-|SlimGO download|
+|Gene Ontology Consortium|mySQL|2016-8|45110|89136|
+
+### Download GO annotation files:
+
+### SlimGO download
+
 |species|background(source)|GO version|GO term count|Priority|Annotated IDs|Alias|Source|
+|---|---|---|---|---|---|---|---|
 |Arabidopsis thaliana|TAIR genome locus (TAIR10_2017)|2016|9431|1|162183|arabidopsis thaliana|TAIR10_2017|
 |Arabidopsis thaliana|TAIR genome locus (TAIR10)|2010|7253|2|28397|arabidopsis thaliana|TAIR 10|
 |Arabidopsis thaliana|arabidopsis genome locus (TAIR9)|2010|8606|3|31819|arabidopsis thaliana|TAIR|
