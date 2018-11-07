@@ -10,12 +10,13 @@ Test image:
 
 DiVenn
 Version 1.0
-Tutorial
+# Tutorial
+## Version 1.0
 
 
-Liang Sun: lsun@noble.org
-Yinbing Ge: yinge@noble.org
-Zach Robinson: ztrobinson@noble.org
+- Liang Sun: lsun@noble.org
+- Yinbing Ge: yinge@noble.org
+- Zach Robinson: ztrobinson@noble.org
 
 
 
