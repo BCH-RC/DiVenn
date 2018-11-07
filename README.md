@@ -25,16 +25,16 @@ Version 1.0
 Gene expression data generated from multiple biological states (mutant sample, double mutant sample and wild-type samples) are often compared via Venn diagram tools. It is of great interest to know the expression pattern between overlapping genes and their associated gene pathways or gene ontology terms. We developed DiVenn – a novel web-based tool that compares gene lists from multiple RNA-Seq experiments in a force directed graph, which shows the gene regulation levels for each gene and integrated KEGG pathway knowledge for the data visualization. DiVenn has three key features: (i) informative force-directed graph with gene expression levels to compare multiple data sets; (ii) interactive visualization with biological annotations and integrated pathway databases, which can be used to aggregate gene nodes to pathway nodes in the graph; and (iii) high resolution image and gene-associated information export.
 
 
-The current version is “1.0”. 
-It is freely available at http://10.84.2.163/index.php (see Figure 1). 
+_The current version is “1.0”. _
+It is freely available [here](http://10.84.2.163/index.php) (see Figure 1). 
 
  
 ![Home Page](./image/tutorial/homepage.PNG)
  Figure 1. Homepage of DiVenn
 
 
-## Brower requirements
-All modern browsers, such as Safari, Google Chrome, and IE are supported. The recommended web browser to use is Chrome. 
+## Browser requirements
+All modern browsers, such as Safari, Google Chrome, and IE are supported. The recommended web browser to use is [Chrome](https://www.google.com/chrome/). 
 
 ## Introduction of DiVenn Interface
 ### 1.   Input Data
@@ -52,24 +52,18 @@ Figure 2 Force-directed graph in DiVenn.
 
 
 ### 3.	Click on the graph
-
 Right clicking nodes can show five function options: show or hide one or all node labels; show all gene associated pathway or GO terms.
 
 #### 3.1	Show and hide node label function
 Right clicking nodes or edges can link out the genes or iTerms or gene:iTerm pairs of your interest to NCBI or eGIFT sentence databases (see Figure 3.1).
 
 #### 3.2	Link to KEGG pathway and GO terms
-
 If users need to check the KEGG pathway or GO terms of interested gene node, choose the ‘show gene detail’ option (see Figure 3.2(3)).
 
  
 ![Right-Click Example](./image/tutorial/clickGraph.PNG)
 
 _**Figure 3.1** Right-click functions. Gene node names can be displayed and hidden; the detailed gene function including pathway and GO terms can be display through ‘Detail’ button._
-
-
-
-
 
 
 ![Gene Detail Example](./image/tutorial/geneDetail.PNG)
