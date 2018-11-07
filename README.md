@@ -78,11 +78,10 @@ _**Figure 3.2** Gene details. KEGG pathway and GO terms will be displayed by sel
 
 ### 4.	GUI Function
 
--	Label Style
-
+##### Label Style
 You can hide or show node labels. 
 
--	Color
+##### Color
 
 You can change the color of all parent/experiment nodes in GUI (See Figure 2 xx).
 
