@@ -31,7 +31,7 @@ It is freely available [here](http://10.84.2.163/index.php) (see Figure 1).
 
  
 ![Home Page](./image/tutorial/homepage.PNG)
- Figure 1. Homepage of DiVenn
+ _**Figure 1.** Homepage of DiVenn_
 
 
 ## Browser requirements
