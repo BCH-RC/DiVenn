@@ -37,12 +37,12 @@ It is freely available at http://10.84.2.163/index.php (see Figure 1).
 All modern browsers, such as Safari, Google Chrome, and IE are supported. The recommended web browser to use is Chrome. 
 
 ## Introduction of DiVenn Interface
-#####1.	Input Data
+######1.	Input Data
 
 DiVenn currently accepts two types of input data: 1) Two-column tab separated custom data. For example, gene ID and corresponding pathway data, transcription factors and their regulated downstream genes, microRNAs and corresponding target genes, and so forth. 2) Gene expression data. The first column is gene IDs and the second column is gene expression value. The gene expression value should be either Reads Per Kilobase Million (RPKM) or Fragments Per Kilobase Million (FPKM). Users can select the cut-off value of fold change (default is two-fold change) to define their differentially expressed (DE) genes. Currently, three types of gene IDs : KEGG gene ID, Uniprot gene ID  and NCBI gene ID, are accepted for pathway analysis and all agriGO  supported ID for GO analysis by DiVenn (See table in excel:GO_supported_ID.xlsx).
 
 
-#####2.	Visualization
+######2.	Visualization
 ![Visualization Example](./image/tutorial/force-directed-graph.PNG)
 
  
@@ -51,7 +51,7 @@ Figure 2 Force-directed graph in DiVenn.
 
 
 
-#####3.	Click on the graph
+######3.	Click on the graph
 
 Right clicking nodes can show five function options: show or hide one or all node labels; show all gene associated pathway or GO terms.
 
