@@ -2,7 +2,7 @@
 DiVenn: An interactive and integrated web-based tool for complex Venn diagrams
 
 # Tutorial
-###### Version 1.0
+> **Version 1.0**
 
 ## Authors
 - Liang Sun: lsun@noble.org
