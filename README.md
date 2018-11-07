@@ -56,7 +56,6 @@ Figure 2 Force-directed graph in DiVenn.
 Right clicking nodes can show five function options: show or hide one or all node labels; show all gene associated pathway or GO terms.
 
 #### 3.1	Show and hide node label function
-
 Right clicking nodes or edges can link out the genes or iTerms or gene:iTerm pairs of your interest to NCBI or eGIFT sentence databases (see Figure 3.1).
 
 #### 3.2	Link to KEGG pathway and GO terms
@@ -67,6 +66,10 @@ If users need to check the KEGG pathway or GO terms of interested gene node, cho
 ![Right-Click Example](./image/tutorial/clickGraph.PNG)
 
 _**Figure 3.1** Right-click functions. Gene node names can be displayed and hidden; the detailed gene function including pathway and GO terms can be display through ‘Detail’ button._
+
+
+
+
 
 
 ![Gene Detail Example](./image/tutorial/geneDetail.PNG)
