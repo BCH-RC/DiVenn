@@ -82,21 +82,18 @@ _**Figure 3.2** Gene details. KEGG pathway and GO terms will be displayed by sel
 You can hide or show node labels. 
 
 ##### Color
-
 You can change the color of all parent/experiment nodes in GUI (See Figure 2 xx).
 
--	Save
-
+##### Save
 Graph can be saved as SVG image file via ‘Save as SVG’ function, SVG file will be downloaded in your local computer. This SVG file can be saved as high-resolution image via ‘SVG to PNG’ function. 
 
--	Show pathway detail
-
+##### Show pathway detail
 You can show all gene-associated pathways by click this button.
  
 ![Pathway Example](./image/tutorial/pathwayTable.PNG)
 _**Figure 4.1** Pathway details of all associated genes in the force-directed graph._
 
--	Show gene ontology detail
+##### Show gene ontology detail
 
 You can show all gene-associated gene ontologies by click this button.
 
