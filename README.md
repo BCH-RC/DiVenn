@@ -42,7 +42,7 @@ All modern browsers, such as Safari, Google Chrome, and IE are supported. The re
 DiVenn currently accepts two types of input data: 1) Two-column tab separated custom data. For example, gene ID and corresponding pathway data, transcription factors and their regulated downstream genes, microRNAs and corresponding target genes, and so forth. 2) Gene expression data. The first column is gene IDs and the second column is gene expression value. The gene expression value should be either Reads Per Kilobase Million (RPKM) or Fragments Per Kilobase Million (FPKM). Users can select the cut-off value of fold change (default is two-fold change) to define their differentially expressed (DE) genes. Currently, three types of gene IDs : KEGG gene ID, Uniprot gene ID  and NCBI gene ID, are accepted for pathway analysis and all agriGO  supported ID for GO analysis by DiVenn (See table in excel:GO_supported_ID.xlsx).
 
 
-##### 2.   Visualization
+### 2.   Visualization
 ![Visualization Example](./image/tutorial/force-directed-graph.PNG)
 
  
@@ -51,15 +51,15 @@ Figure 2 Force-directed graph in DiVenn.
 
 
 
-###### 3.	Click on the graph
+### 3.	Click on the graph
 
 Right clicking nodes can show five function options: show or hide one or all node labels; show all gene associated pathway or GO terms.
 
-3.1	Show and hide node label function
+#### 3.1	Show and hide node label function
 
 Right clicking nodes or edges can link out the genes or iTerms or gene:iTerm pairs of your interest to NCBI or eGIFT sentence databases (see Figure 3.1).
 
-3.2	Link to KEGG pathway and GO terms
+#### 3.2	Link to KEGG pathway and GO terms
 
 If users need to check the KEGG pathway or GO terms of interested gene node, choose the ‘show gene detail’ option (see Figure 3.2(3)).
 
@@ -73,7 +73,7 @@ _**Figure 3.1** Right-click functions. Gene node names can be displayed and hidd
 
 _**Figure 3.2** Gene details. KEGG pathway and GO terms will be displayed by selecting gene detail option._
 
-4.	GUI Function
+### 4.	GUI Function
 
 -	Label Style
 
