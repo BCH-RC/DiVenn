@@ -32,7 +32,7 @@ DiVenn currently accepts two types of input data (see Figure 2): 1) Two-column t
 
 Please use the following sample data to test our tool: http://10.84.2.163/yge/data.html
 
-![Visualization Example](./image/tutorial/figure2.PNG)
+![Visualization Example](./image/tutorial/Figure2.png)
 
 Figure 2 Force-directed graph in DiVenn.
 
