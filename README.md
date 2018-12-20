@@ -30,7 +30,7 @@ All modern browsers, such as Safari, Google Chrome, and IE are supported. The re
 
 DiVenn currently accepts two types of input data (see Figure 2): 1) Two-column tab separated custom data. For example, gene ID and corresponding pathway data, transcription factors and their regulated downstream genes, microRNAs and corresponding target genes, and so forth. 2) Gene expression data. The first column is gene IDs and the second column is gene regulation value. The gene regulation value should be obtained from differentially expressed genes. Users can select the cut-off value of fold change (default is two-fold change) to define their differentially expressed (DE) genes. To simply this gene regulation value, we use “1” to represent up-regulated genes and “2” to represent down-regulated genes. If users need to link their genes to KEGG pathway (Kanehisa and Goto, 2000) or GO database, 14 model species are supported in DiVenn. Currently, three types of gene IDs : KEGG gene IDs, Uniprot gene IDs (UniProt, 2008) and NCBI gene IDs (Benson, et al., 2018), are accepted for pathway analysis. All agriGO (Du, et al., 2010; Tian, et al., 2017) supported IDs are supported for GO analysis by DiVenn ([View Table](image/tutorial/GO_table.md) or download in [Excel](image/tutorial/GO_version.xlsx)).
 
-Please use the following sample data to test our tool: http://10.84.2.163/yge/data.html
+Please use the following sample data to test our tool: http://divenn.noble.org/data.html
 
 ![Visualization Example](./image/tutorial/Figure2.png)
 
