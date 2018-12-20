@@ -10,7 +10,7 @@ DiVenn: An interactive and integrated web-based tool for complex Venn diagrams
 > **Version 1.0**
  
 ## Introduction
-Gene expression data generated from multiple biological states (mutant sample, double mutant sample and wild-type samples) are often compared via Venn diagram tools. It is of great interest to know the expression pattern between overlapping genes and their associated gene pathways or gene ontology terms. We developed DiVenn – a novel web-based tool that compares gene lists from multiple RNA-Seq experiments in a force directed graph, which shows the gene regulation levels for each gene and integrated KEGG pathway knowledge for the data visualization. DiVenn has three key features: (i) informative force-directed graph with gene expression levels to compare multiple data sets; (ii) interactive visualization with biological annotations and integrated pathway databases, which can be used to aggregate gene nodes to pathway nodes in the graph; and (iii) high resolution image and gene-associated information export.
+Gene expression data generated from multiple biological states (mutant sample, double mutant sample and wild-type samples) are often compared via Venn diagram tools. It is of great interest to know the expression pattern between overlapping genes and their associated gene pathways or gene ontology terms. We developed DiVenn – a novel web-based tool that compares gene lists from multiple RNA-Seq experiments in a force directed graph, which shows the gene regulation levels for each gene and integrated KEGG pathway and gene ontology (GO) knowledge for the data visualization. DiVenn has three key features: (i) informative force-directed graph with gene expression levels to compare multiple data sets; (ii) interactive visualization with biological annotations and integrated pathway and GO databases, which can be used to subset or highlight gene nodes to pathway or GO terms of interest in the graph; and (iii) high resolution image and gene-associated information export.
 
 
 *The current version is “1.0”.*
@@ -28,9 +28,13 @@ All modern browsers, such as Safari, Google Chrome, and IE are supported. The re
 ## Introduction of DiVenn Interface
 ### 1.   Input Data
 
-DiVenn currently accepts two types of input data: 1) Two-column tab separated custom data. For example, gene ID and corresponding pathway data, transcription factors and their regulated downstream genes, microRNAs and corresponding target genes, and so forth. 2) Gene expression data. The first column is gene IDs and the second column is gene expression value. The gene expression value should be either Reads Per Kilobase Million (RPKM) or Fragments Per Kilobase Million (FPKM). Users can select the cut-off value of fold change (default is two-fold change) to define their differentially expressed (DE) genes. Currently, three types of gene IDs : KEGG gene ID, Uniprot gene ID  and NCBI gene ID, are accepted for pathway analysis and all agriGO  supported ID for GO analysis by DiVenn ([View Table](image/tutorial/GO_table.md) or download in [Excel](image/tutorial/GO_version.xlsx)).
+DiVenn currently accepts two types of input data (see Figure 2): 1) Two-column tab separated custom data. For example, gene ID and corresponding pathway data, transcription factors and their regulated downstream genes, microRNAs and corresponding target genes, and so forth. 2) Gene expression data. The first column is gene IDs and the second column is gene regulation value. The gene regulation value should be obtained from differentially expressed genes. Users can select the cut-off value of fold change (default is two-fold change) to define their differentially expressed (DE) genes. To simply this gene regulation value, we use “1” to represent up-regulated genes and “2” to represent down-regulated genes. If users need to link their genes to KEGG pathway (Kanehisa and Goto, 2000) or GO database, 14 model species are supported in DiVenn. Currently, three types of gene IDs : KEGG gene IDs, Uniprot gene IDs (UniProt, 2008) and NCBI gene IDs (Benson, et al., 2018), are accepted for pathway analysis. All agriGO (Du, et al., 2010; Tian, et al., 2017) supported IDs are supported for GO analysis by DiVenn ([View Table](image/tutorial/GO_table.md) or download in [Excel](image/tutorial/GO_version.xlsx)).
 
+Please use the following sample data to test our tool: http://10.84.2.163/yge/data.html
 
+![Visualization Example](./image/tutorial/figure2.PNG)
+
+Figure 2 Force-directed graph in DiVenn.
 
 ### 2.   Visualization
 ![Visualization Example](./image/tutorial/force-directed-graph.PNG)
