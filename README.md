@@ -46,7 +46,9 @@ _**Figure 2** Homepage of DiVenn_
 
 ### 3.	Click on the graph
 Scroll the mouse on the graph will zoom in/out the graph.
+
 Left clicking a node will show the connected edge colors, which will display the gene regulation status in each experiments. Double clicking the same node will hid the connect edge colors.
+
 Right clicking a node can show five function options: show or hide one or all node labels; show all gene associated pathway or GO terms.
 
 
