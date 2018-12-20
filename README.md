@@ -34,7 +34,7 @@ Please use the following sample data to test our tool: http://10.84.2.163/yge/da
 
 ![Visualization Example](./image/tutorial/Figure2.png)
 
-Figure 2 Force-directed graph in DiVenn.
+_**Figure 2** Homepage of DiVenn_
 
 ### 2.   Visualization
 ![Visualization Example](./image/tutorial/force-directed-graph.PNG)
