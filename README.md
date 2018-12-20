@@ -45,18 +45,18 @@ _**Figure 2** Homepage of DiVenn_
 
 
 ### 3.	Click on the graph
-Scroll the mouse on the graph will zoom in/out the graph.
+Scrolling with the mouse wheel on the graph will zoom in/out the graph.
 
-Left clicking a node will show the connected edge colors, which will display the gene regulation status in each experiments. Double clicking the same node will hid the connect edge colors.
+Left clicking a node will show the connected edge colors, which will display the gene regulation status for each experiments. Double clicking the same node will hide the connect edge colors.
 
 Right clicking a node can show five function options: show or hide one or all node labels; show all gene associated pathway or GO terms.
 
 
 #### 3.1	Show and hide node label function
-Right clicking nodes or edges can link out the genes or iTerms or gene:iTerm pairs of your interest to NCBI or eGIFT sentence databases (see Figure 4.1).
+Right clicking nodes can show the gene IDs of your interest (see Figure 4.1).
 
 #### 3.2	Link to KEGG pathway and GO terms
-If users need to check the KEGG pathway or GO terms of interested gene node, choose the ‘show gene detail’ option (see Figure 4.2(3)).
+If users need to check the KEGG pathway or GO terms of interested gene node, they choose the ‘show gene detail’ option after right clicking the node (see Figure 4.2).
 
  
 ![Right-Click Example](./image/tutorial/clickGraph.PNG)
@@ -74,15 +74,15 @@ _**Figure 4.2** Gene details. KEGG pathway and GO terms will be displayed by sel
 You can hide or show node labels. 
 
 #### Color
-You can change the color of all parent/experiment nodes in GUI (See Figure 2 xx).
+You can change the color of all parent/experiment nodes in GUI (See Figure 3).
 
 #### Save
-Graph can be saved as SVG image file via ‘Save as SVG’ function, SVG file will be downloaded in your local computer. This SVG file can be saved as high-resolution image via ‘SVG to PNG’ function.
+Graph can be saved as SVG image file via ‘Save as SVG’ function, SVG file will be downloaded in your local computer. This SVG file can be converted to a high resolution image using free online tools.
 
 #### Show pathway detail
-You can show all gene-associated pathways by click this button and get the pathway informative table (See Figure 5.1).
+You can show all gene-associated pathways by clicking this button and get the pathway informative table (See Figure 5.1).
 
-All headlines are sortable, the table is also searchable using key words of interest. If users need to sort gene list based on the pathway name, they can click on the headline of pathway column. If users need to multiple select genes from the same pathway after sorting the genes based on the same pathway, they can click the first checkbox and press shift keyboard to click the last checkbox, and redraw the selected genes to different shapes by clicking the “Redraw” button at the end of the table, or subset the genes into another new graph by click the “Only Redraw Selected” checkbox and “Redraw” button.
+All headlines are sortable, the table is also searchable using key words of interest. If users need to sort gene list based on the pathway name, they can click on the headline of pathway column. If users need to select multiple genes from the same pathway after sorting the genes based on the same pathway, they can click the first checkbox and press shift button on the keyboard to click the last checkbox, and redraw the selected genes to different shapes by clicking the “Redraw” button at the end of the table, or subset the genes into another new graph by clicking the “Only Redraw Selected” checkbox and “Redraw” button.
  
 
  
@@ -90,9 +90,9 @@ All headlines are sortable, the table is also searchable using key words of inte
 _**Figure 5.1** Pathway details of all associated genes in the force-directed graph._
 
 #### Show gene ontology detail
-You can show all gene-associated gene ontologies by click this button and get the gene ontology informative table (See Figure 5.2).
+You can show all gene-associated gene ontologies by clicking this button and get the gene ontology informative table (See Figure 5.2).
 
-All headlines are sortable, the table is also searchable using key words of interest. If users need to sort gene list based on the gene ontology name, they can click on the headline of pathway column. If users need to multiple select genes from the same pathway after sorting the genes based on the same gene ontology, they can click the first checkbox and press shift keyboard to click the last checkbox, and redraw the selected genes to different shapes by clicking the “Redraw” button at the end of the table, or subset the genes into another new graph by click the “Only Redraw Selected” checkbox and “Redraw” button.
+All headlines are sortable, the table is also searchable using key words of interest. If users need to sort gene list based on the gene ontology name, they can click on the headline of pathway column. If users need to select multiple genes from the same pathway after sorting the genes based on the same gene ontology, they can click the first checkbox and press shift button on the keyboard to click the last checkbox, and redraw the selected genes to different shapes by clicking the “Redraw” button at the end of the table, or subset the genes into another new graph by clicking the “Only Redraw Selected” checkbox and “Redraw” button.
 
 ![Gene Ontology Details](./image/tutorial/geneOntologyDetails.png)
 _**Figure 5.2** Gene ontology details of all associated genes in the force-directed graph._
