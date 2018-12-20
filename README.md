@@ -39,20 +39,22 @@ _**Figure 2** Homepage of DiVenn_
 ### 2.   Visualization
 ![Visualization Example](./image/tutorial/force-directed-graph.PNG)
 
- 
-Figure 2 Force-directed graph in DiVenn.
+ _**Figure 3** Force-directed graph in DiVenn_
 
 
 
 
 ### 3.	Click on the graph
-Right clicking nodes can show five function options: show or hide one or all node labels; show all gene associated pathway or GO terms.
+Scroll the mouse on the graph will zoom in/out the graph.
+Left clicking a node will show the connected edge colors, which will display the gene regulation status in each experiments. Double clicking the same node will hid the connect edge colors.
+Right clicking a node can show five function options: show or hide one or all node labels; show all gene associated pathway or GO terms.
+
 
 #### 3.1	Show and hide node label function
-Right clicking nodes or edges can link out the genes or iTerms or gene:iTerm pairs of your interest to NCBI or eGIFT sentence databases (see Figure 3.1).
+Right clicking nodes or edges can link out the genes or iTerms or gene:iTerm pairs of your interest to NCBI or eGIFT sentence databases (see Figure 4.1).
 
 #### 3.2	Link to KEGG pathway and GO terms
-If users need to check the KEGG pathway or GO terms of interested gene node, choose the ‘show gene detail’ option (see Figure 3.2(3)).
+If users need to check the KEGG pathway or GO terms of interested gene node, choose the ‘show gene detail’ option (see Figure 4.2(3)).
 
  
 ![Right-Click Example](./image/tutorial/clickGraph.PNG)
