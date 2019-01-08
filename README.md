@@ -23,18 +23,18 @@ The application is freely available for Noble employees [here](http://10.84.2.16
 
 
 ## Browser requirements
-All modern browsers, such as Safari, Google Chrome, and IE are supported. The recommended web browser to use is [Chrome](https://www.google.com/chrome/). 
+All modern browsers, such as Safari, Google Chrome, and IE are supported. The recommended web browser is [Chrome](https://www.google.com/chrome/). 
 
 ## Introduction of DiVenn Interface
 ### 1.   Input Data
 
-DiVenn currently accepts two types of input data (see Figure 2): 1) Two-column tab separated custom data. For example, gene ID and corresponding pathway data, transcription factors and their regulated downstream genes, microRNAs and corresponding target genes, and so forth. 2) Gene expression data. The first column is gene IDs and the second column is gene regulation value. The gene regulation value should be obtained from differentially expressed genes. Users can select the cut-off value of fold change (default is two-fold change) to define their differentially expressed (DE) genes. To simply this gene regulation value, we use “1” to represent up-regulated genes and “2” to represent down-regulated genes. If users need to link their genes to KEGG pathway (Kanehisa and Goto, 2000) or GO database, 14 model species are supported in DiVenn. Currently, three types of gene IDs : KEGG gene IDs, Uniprot gene IDs (UniProt, 2008) and NCBI gene IDs (Benson, et al., 2018), are accepted for pathway analysis. All agriGO (Du, et al., 2010; Tian, et al., 2017) supported IDs are supported for GO analysis by DiVenn ([View Table](image/tutorial/GO_table.md) or download in [Excel](image/tutorial/GO_version.xlsx)).
+DiVenn currently accepts two types of input data (see Figure 2): 1) Two-column tab separated custom data. For example, gene ID and corresponding pathway data, transcription factors and their regulated downstream genes, and microRNAs and corresponding target genes. 2) Gene expression data. The first column is gene IDs and the second column is gene regulation value. The gene regulation value should be obtained from differentially expressed (DE) genes. Users can select the cut-off value of fold change (default is two-fold change) to define their DE genes. To simplify this gene regulation value, we use “1” to represent up-regulated genes and “2” to represent down-regulated genes. If users need to link their genes to the KEGG pathway (Kanehisa and Goto, 2000) or GO database, 14 model species are supported in DiVenn. Currently, three types of gene IDs : KEGG, Uniprot (UniProt, 2008) and NCBI (Benson, et al., 2018), are accepted for pathway analysis. All agriGO (Du, et al., 2010; Tian, et al., 2017) supported IDs are supported for GO analysis by DiVenn ([View table](image/tutorial/GO_table.md) or download in [Excel](image/tutorial/GO_version.xlsx)).
 
 Please use the following sample data to test our tool: http://divenn.noble.org/data.html
 
 ![Visualization Example](./image/tutorial/Figure2.png)
 
-_**Figure 2** Homepage of DiVenn_
+_**Figure 2** Flow chart of DiVenn_
 
 ### 2.   Visualization
 ![Visualization Example](./image/tutorial/force-directed-graph.PNG)
@@ -44,29 +44,29 @@ _**Figure 2** Homepage of DiVenn_
 
 
 
-### 3.	Click on the graph
-Scrolling with the mouse wheel on the graph will zoom in/out the graph.
+### 3.	Click on the Graph
+Scrolling with the mouse wheel on the graph will zoom into/out of the graph.
 
-Left clicking a node will show the connected edge colors, which will display the gene regulation status for each experiments. Double clicking the same node will hide the connecting edge colors.
+Left-clicking a node will show the connected edge colors, which will display the gene regulation status for each experiment. Double-clicking the same node will hide the connecting edge colors.
 
-Right clicking a node can show five function options: show or hide one or all node labels; show all gene associated pathway or GO terms.
+Right-clicking a node will show five function options: show or hide one or all node labels, show all gene associated pathways, or GO terms.
 
 
 #### 3.1	Show and hide node label function
-Right clicking nodes can show the gene IDs of your interest (see Figure 4.1).
+Right-clicking nodes can show the gene IDs of interest (see Figure 4.1).
 
 #### 3.2	Link to KEGG pathway and GO terms
-If users need to check the KEGG pathway or GO terms of interested gene node, they choose the ‘show gene detail’ option after right clicking the node (see Figure 4.2).
+If users need to check the KEGG pathway or GO terms of interested gene node, they choose the ‘show gene details’ option after right clicking the node (see Figure 4.2).
 
  
 ![Right-Click Example](./image/tutorial/clickGraph.PNG)
 
-_**Figure 4.1** Right-click functions. Gene node names can be displayed and hidden; the detailed gene function including pathway and GO terms can be display through ‘Detail’ button._
+_**Figure 4.1** Right-click functions. Gene node names can be displayed and hidden; the detailed gene function, including pathway and GO terms, can be displayed through ‘Details’ button._
 
 
 ![Gene Detail Example](./image/tutorial/geneDetail.PNG)
 
-_**Figure 4.2** Gene details. KEGG pathway and GO terms will be displayed by selecting gene detail option._
+_**Figure 4.2** Gene details. KEGG pathway and GO terms will be displayed by selecting "Gene pathway details" or "Gene ontology details" option._
 
 ### 4.	GUI Function
 
@@ -74,25 +74,25 @@ _**Figure 4.2** Gene details. KEGG pathway and GO terms will be displayed by sel
 You can hide or show node labels. 
 
 #### Color
-You can change the color of all parent/experiment nodes in GUI (See Figure 3).
+You can change the color of all parent/experiment nodes in GUI (see Figure 3).
 
 #### Save
-Graph can be saved as a SVG image file via ‘Save as SVG’ function, and the SVG file can be downloaded in your local computer. This SVG file can be converted to a high resolution image using free online tools.
+Graph can be saved as an SVG image file via the "Save as SVG" function, and the SVG file can be downloaded to your local computer. This SVG file can be converted to a high-resolution image using free online tools.
 
-#### Show pathway detail
-You can show all gene-associated pathways by clicking this button and get the pathway informative table (See Figure 5.1).
+#### Show Pathway Detail
+You can show all gene-associated pathways by clicking this button and get the pathway informative table (see Figure 5.1).
 
-The column headers on the informative table are sortable, the table is also searchable using key words of interest. If users need to sort gene list based on the pathway name, they can click on the “Pathway” column header. If users need to multiple select genes from the same pathway after sorting the genes based on the same pathway, they can click the first checkbox and press shift keyboard to click the last checkbox, and redraw the selected genes to different shapes by clicking the “Redraw” button at the end of the table, or subset the genes into another new graph by click the “Only Redraw Selected” checkbox and “Redraw” button.
+The column headers on the informative table are sortable; the table is also searchable with key words of interest. If users need to sort a gene list based on the pathway name, they can click on the “Pathway” column header. If users need to select multiple genes from the same pathway after sorting the genes based on pathway, they can click the first checkbox and press shift before clicking the last checkbox. They can redraw the selected genes to different shapes by clicking the “Redraw” button at the end of the table or subset the genes into another new graph by clicking the “Only Redraw Selected” checkbox and the “Redraw” button.
  
 
  
 ![Pathway Example](./image/tutorial/pathwayTable.PNG)
 _**Figure 5.1** Pathway details of all associated genes in the force-directed graph._
 
-#### Show gene ontology detail
-You can show all gene-associated gene ontologies by clicking this button and get the gene ontology informative table (See Figure 5.2).
+#### Show Gene Ontology Detail
+You can show all gene-associated gene ontologies by clicking this button to get the gene ontology informative table (see Figure 5.2).
 
-The column headers on the informative table are, sortable the table is also searchable using key words of interest. If users need to sort gene list based on the gene ontology name, they can click on the “GO term” column header. If users need to multiple select genes from the same GO terms after sorting the genes based on the GO terms, they can click the first checkbox and press shift keyboard to click the last checkbox, and redraw the selected genes to different shapes by clicking the “Redraw” button at the end of the table, or subset the genes into another new graph by click the “Only Redraw Selected” checkbox and “Redraw” button.
+The column headers on the informative table are sortable; the table is also searchable with key words of interest. If users need to sort the gene list based on the gene ontology name, they can click on the “GO term” column header. If users need to select multiple genes from the same GO terms after sorting the genes based on GO terms, they can click the first checkbox and press shift before clicking the last checkbox. They can redraw the selected genes to different shapes by clicking the “Redraw” button at the end of the table or subset the genes into another new graph by clicking the “Only Redraw Selected” checkbox and the “Redraw” button.
 
 ![Gene Ontology Details](./image/tutorial/geneOntologyDetails.png)
 _**Figure 5.2** Gene ontology details of all associated genes in the force-directed graph._
