@@ -15,7 +15,7 @@ Gene expression data generated from multiple biological states (mutant sample, d
 
 *The current version is “1.0”.*
 
-The application is freely available for Noble employees [here](http://10.84.2.163/index.php) (see Figure 1). 
+The application is freely available (see Figure 1). 
 
  
 ![Home Page](./image/tutorial/homepage.PNG)
