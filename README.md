@@ -15,7 +15,7 @@ Gene expression data generated from multiple biological states (mutant sample, d
 
 *The current version is “1.0”.*
 
-The application is freely available (see Figure 1). 
+The application is freely available at http://divenn.noble.org/  (see Figure 1). 
 
  
 ![Home Page](./image/tutorial/homepage.PNG)
