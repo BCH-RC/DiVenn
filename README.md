@@ -1,5 +1,5 @@
 # About DiVenn
-DiVenn: An interactive and integrated web-based tool for complex Venn diagrams
+DiVenn: An interactive and integrated web-based tool for comparing gene lists
 
 # Authors
 - Liang Sun: lsun@noble.org
