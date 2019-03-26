@@ -36,7 +36,7 @@ DiVenn currently accepts two types of input data (see Figure 2): 1) Two-column t
 
 Please use the following sample data to test our tool: http://divenn.noble.org/data.html
 
-![Visualization Example](./image/tutorial/flowchart.tif)
+![Visualization Example](./image/tutorial/flowchart.png)
 
 _**Figure 2** Flow chart of DiVenn_
 
