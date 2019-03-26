@@ -84,21 +84,27 @@ You can change the color of all parent/experiment nodes in GUI (see Figure 3).
 Graph can be saved as an SVG image file via the "Save as SVG" function, and the SVG file can be downloaded to your local computer. This SVG file can be converted to a high-resolution image using free online tools.
 
 #### Show Pathway Detail
-You can show all gene-associated pathways by clicking this button and get the pathway informative table (see Figure 5.1).
+You can show all gene-associated pathways by clicking this button and get the pathway informative table (see Figure 6.
 
-The column headers on the informative table are sortable; the table is also searchable with key words of interest. If users need to sort a gene list based on the pathway name, they can click on the “Pathway” column header. If users need to select multiple genes from the same pathway after sorting the genes based on pathway, they can click the first checkbox and press shift before clicking the last checkbox. They can redraw the selected genes to different shapes by clicking the “Redraw” button at the end of the table or subset the genes into another new graph by clicking the “Only Redraw Selected” checkbox and the “Redraw” button.
+The column headers on the informative table are sortable; the table is also searchable with key words of interest. If users need to sort a gene list based on the pathway name, they can click on the “Pathway” column header. If users need to select multiple genes from the same pathway after sorting the genes based on pathway, they can click the first checkbox and press shift before clicking the last checkbox. They can redraw the selected genes to the square shapes by clicking the “Redraw” button at the end of the table or subset the genes into another new graph by clicking the “Only Redraw Selected” checkbox and the “Redraw” button. For example, we can select all genes which are enriched to a significant KEGG pathway “Plant-pathogen interaction” (p value = 7.83e-14) and highlight all genes to be square shapes via “Redraw” function (See Figure 7). We can also subset all genes which belong to KEGG pathway “Plant-pathogen interaction” into another new graph (See Figure 8).
  
 
  
 ![Pathway Example](./image/tutorial/pathwayTable.PNG)
-_**Figure 5.1** Pathway details of all associated genes in the force-directed graph._
+_**Figure 6** Pathway details of all associated genes in the force-directed graph._
+
+![Pathway Example](./image/tutorial/pathwayTable.PNG)
+_**Figure 7** Pathway details of all associated genes in the force-directed graph._
+
+![Pathway Example](./image/tutorial/pathwayTable.PNG)
+_**Figure 8** Pathway details of all associated genes in the force-directed graph._
 
 #### Show Gene Ontology Detail
-You can show all gene-associated gene ontologies by clicking this button to get the gene ontology informative table (see Figure 5.2).
+You can show all gene-associated gene ontologies by clicking this button to get the gene ontology informative table (see Figure 9).
 
-The column headers on the informative table are sortable; the table is also searchable with key words of interest. If users need to sort the gene list based on the gene ontology name, they can click on the “GO term” column header. If users need to select multiple genes from the same GO terms after sorting the genes based on GO terms, they can click the first checkbox and press shift before clicking the last checkbox. They can redraw the selected genes to different shapes by clicking the “Redraw” button at the end of the table or subset the genes into another new graph by clicking the “Only Redraw Selected” checkbox and the “Redraw” button.
+The column headers on the informative table are sortable; the table is also searchable with key words of interest. If users need to sort the gene list based on the gene ontology name, they can click on the “GO term” column header. If users need to select multiple genes from the same GO terms after sorting the genes based on GO terms, they can click the first checkbox and press shift before clicking the last checkbox. They can redraw the selected genes to the square shapes by clicking the “Redraw” button at the end of the table or subset the genes into another new graph by clicking the “Only Redraw Selected” checkbox and the “Redraw” button.
 
 ![Gene Ontology Details](./image/tutorial/GO_table.PNG)
-_**Figure 5.2** Gene ontology details of all associated genes in the force-directed graph._
+_**Figure 9** Gene ontology details of all associated genes in the force-directed graph._
 
 
