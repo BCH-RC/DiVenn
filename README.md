@@ -36,7 +36,7 @@ DiVenn currently accepts two types of input data (see Figure 2): 1) Two-column t
 
 Please use the following sample data to test our tool: http://divenn.noble.org/data.html
 
-![Visualization Example](./image/tutorial/Figure2.png)
+![Visualization Example](./image/tutorial/flowchart.png)
 
 _**Figure 2** Flow chart of DiVenn_
 
@@ -60,17 +60,17 @@ Right-clicking a node will show five function options: show or hide one or all n
 Right-clicking nodes can show the gene IDs of interest (see Figure 4).
 
 #### 3.2	Link to KEGG pathway and GO terms
-If users need to check the KEGG pathway or GO terms of interested gene node, they choose the ‘show gene details’ option after right clicking the node (see Figure 5).
+If users need to check the KEGG pathway or GO terms of interested gene node, they can choose the ‘Gene details’ option after right clicking the node (see Figure 5).
 
  
 ![Right-Click Example](./image/tutorial/clickGraph.PNG)
 
-_**Figure 4** Right-click functions. Gene node names can be displayed and hidden; the detailed gene function, including pathway and GO terms, can be displayed through ‘Details’ button._
+_**Figure 4** Right-click functions. Gene node names can be displayed and hidden; the detailed gene function, including pathway and GO terms, can be displayed through ‘Gene details’ button._
 
 
 ![Gene Detail Example](./image/tutorial/geneDetail.PNG)
 
-_**Figure 5** Gene details. KEGG pathway and GO terms will be displayed by selecting "Gene pathway details" or "Gene ontology details" option._
+_**Figure 5** Gene details. KEGG pathway and GO terms will be displayed._
 
 ### 4.	GUI Function
 
