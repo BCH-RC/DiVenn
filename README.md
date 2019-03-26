@@ -57,20 +57,20 @@ Right-clicking a node will show five function options: show or hide one or all n
 
 
 #### 3.1	Show and hide node label function
-Right-clicking nodes can show the gene IDs of interest (see Figure 4.1).
+Right-clicking nodes can show the gene IDs of interest (see Figure 4).
 
 #### 3.2	Link to KEGG pathway and GO terms
-If users need to check the KEGG pathway or GO terms of interested gene node, they choose the ‘show gene details’ option after right clicking the node (see Figure 4.2).
+If users need to check the KEGG pathway or GO terms of interested gene node, they choose the ‘show gene details’ option after right clicking the node (see Figure 5).
 
  
 ![Right-Click Example](./image/tutorial/clickGraph.PNG)
 
-_**Figure 4.1** Right-click functions. Gene node names can be displayed and hidden; the detailed gene function, including pathway and GO terms, can be displayed through ‘Details’ button._
+_**Figure 4** Right-click functions. Gene node names can be displayed and hidden; the detailed gene function, including pathway and GO terms, can be displayed through ‘Details’ button._
 
 
 ![Gene Detail Example](./image/tutorial/geneDetail.PNG)
 
-_**Figure 4.2** Gene details. KEGG pathway and GO terms will be displayed by selecting "Gene pathway details" or "Gene ontology details" option._
+_**Figure 5** Gene details. KEGG pathway and GO terms will be displayed by selecting "Gene pathway details" or "Gene ontology details" option._
 
 ### 4.	GUI Function
 
@@ -84,7 +84,7 @@ You can change the color of all parent/experiment nodes in GUI (see Figure 3).
 Graph can be saved as an SVG image file via the "Save as SVG" function, and the SVG file can be downloaded to your local computer. This SVG file can be converted to a high-resolution image using free online tools.
 
 #### Show Pathway Detail
-You can show all gene-associated pathways by clicking this button and get the pathway informative table (see Figure 6.
+You can show all gene-associated pathways by clicking this button and get the pathway informative table (see Figure 6).
 
 The column headers on the informative table are sortable; the table is also searchable with key words of interest. If users need to sort a gene list based on the pathway name, they can click on the “Pathway” column header. If users need to select multiple genes from the same pathway after sorting the genes based on pathway, they can click the first checkbox and press shift before clicking the last checkbox. They can redraw the selected genes to the square shapes by clicking the “Redraw” button at the end of the table or subset the genes into another new graph by clicking the “Only Redraw Selected” checkbox and the “Redraw” button. For example, we can select all genes which are enriched to a significant KEGG pathway “Plant-pathogen interaction” (p value = 7.83e-14) and highlight all genes to be square shapes via “Redraw” function (See Figure 7). We can also subset all genes which belong to KEGG pathway “Plant-pathogen interaction” into another new graph (See Figure 8).
  
@@ -93,11 +93,11 @@ The column headers on the informative table are sortable; the table is also sear
 ![Pathway Example](./image/tutorial/pathwayTable.PNG)
 _**Figure 6** Pathway details of all associated genes in the force-directed graph._
 
-![Pathway Example](./image/tutorial/pathwayTable.PNG)
-_**Figure 7** Pathway details of all associated genes in the force-directed graph._
+![Gene Highlight](./image/tutorial/highlight.PNG)
+_**Figure 7** Highlight of genes in KEGG Plant-pathogen interaction pathway (square node)._
 
-![Pathway Example](./image/tutorial/pathwayTable.PNG)
-_**Figure 8** Pathway details of all associated genes in the force-directed graph._
+![Gene Subset](./image/tutorial/subset.PNG)
+_**Figure 8** Subset of genes belonging to KEGG Plant-pathogen interaction pathway._
 
 #### Show Gene Ontology Detail
 You can show all gene-associated gene ontologies by clicking this button to get the gene ontology informative table (see Figure 9).
