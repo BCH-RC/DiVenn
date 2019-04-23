@@ -2,7 +2,7 @@
 DiVenn: An interactive and integrated web-based tool for comparing gene lists
 # Citation
 `Sun, Liang, et al. 
-["DiVenn: An Interactive and Integrated Web-based Visualization Tool for Comparing Gene Lists."](https://www.frontiersin.org/articles/10.3389/fgene.2019.00421/) 
+["DiVenn: An Interactive and Integrated Web-based Visualization Tool for Comparing Gene Lists."](https://www.frontiersin.org/articles/10.3389/fgene.2019.00421/abstract) 
 Frontiers in Genetics (2019),doi: 10.3389/fgene.2019.00421`
 # Authors
 - Liang Sun: lsun@noble.org
