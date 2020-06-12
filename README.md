@@ -22,7 +22,7 @@ Gene expression data generated from multiple biological states (mutant sample, d
 
 *The current version is “1.0”.*
 
-The application is freely available at http://divenn.noble.org/  (see Figure 1). 
+The application is freely available at http://divenn.noble.org/v1/  (see Figure 1). 
 
  
 ![Home Page](./image/tutorial/homepage.PNG)
@@ -110,8 +110,7 @@ The column headers on the informative table are sortable; the table is also sear
 ![Gene Ontology Details](./image/tutorial/GO_table.PNG)
 _**Figure 9** Gene ontology details of all associated genes in the force-directed graph._
 
-### 4.	Open Source
-      ![D3.js]
-      (https://github.com/d3/d3)
-      [dat.GUI]
-      (https://github.com/dataarts/dat.gui)
+#### Open Resource
+[D3.js](https://github.com/d3/d3)
+[dat.GUI](https://github.com/dataarts/dat.gui)
+
