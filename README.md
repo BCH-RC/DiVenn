@@ -1,10 +1,10 @@
 # About DiVenn
-DiVenn: An interactive and integrated web-based tool for comparing gene lists
+DiVenn is an interactive and integrated web-based tool for comparing gene lists
 # Citation
 Sun, Liang, et al. 
 ["DiVenn: An Interactive and Integrated Web-based Visualization Tool for Comparing Gene Lists."](https://www.frontiersin.org/articles/10.3389/fgene.2019.00421/abstract) Frontiers in Genetics (2019),doi: 10.3389/fgene.2019.00421
 # Authors
-- Liang Sun: lsun@noble.org(invalid) or sunliang@udel.edu
+- Liang Sun: sunliang@udel.edu
 - Yinbing Ge: yinge@noble.org
 - Zach Robinson: ztrobinson@noble.org
 # Contact Us
@@ -12,15 +12,19 @@ If you have any questions, please contact Perdeep Mehta: pkmehta@noble.org
 # Tutorial
 > **Version 1.0**
 
-If you want to watch a youtube video, please click the video below.
+Click below to watch a tutorial video.
 
 [![Watch the video](https://img.youtube.com/vi/A7Ldx24e9UU/0.jpg)](https://youtu.be/A7Ldx24e9UU)
 
 ## Introduction
-Gene expression data generated from multiple biological states (mutant sample, double mutant sample and wild-type samples) are often compared via Venn diagram tools. It is of great interest to know the expression pattern between overlapping genes and their associated gene pathways or gene ontology terms. We developed DiVenn – a novel web-based tool that compares gene lists from multiple RNA-Seq experiments in a force directed graph, which shows the gene regulation levels for each gene and integrated KEGG pathway and gene ontology (GO) knowledge for the data visualization. DiVenn has three key features: (i) informative force-directed graph with gene expression levels to compare multiple data sets; (ii) interactive visualization with biological annotations and integrated pathway and GO databases, which can be used to subset or highlight gene nodes to pathway or GO terms of interest in the graph; and (iii) high resolution image and gene-associated information export.
+Gene expression data generated from multiple biological states (mutant sample, double mutant sample and wild-type samples) are often compared via Venn diagram tools. It is of great interest to know the expression pattern between overlapping genes and their associated gene pathways or gene ontology terms. We developed DiVenn – a novel web-based tool that compares gene lists from multiple RNA-Seq experiments in a force directed graph, which shows the gene regulation levels for each gene and integrated KEGG pathway and gene ontology (GO) knowledge for the data visualization. 
+DiVenn has three key features: 
+* informative force-directed graph with gene expression levels to compare multiple data sets; 
+* interactive visualization with biological annotations and integrated pathway and GO databases, which can be used to subset or highlight gene nodes to pathway or GO terms of interest in the graph;
+* high resolution image and gene-associated information export.
 
 
-*The current version is “1.0”.*
+*The current version is “2.0”.*
 
 The application is freely available at http://divenn.noble.org/v1/  (see Figure 1). 
 
