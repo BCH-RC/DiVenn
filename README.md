@@ -29,7 +29,7 @@ Gene expression data generated from multiple biological states (mutant sample, d
 The application is freely available at http://divenn.noble.org/  (see Figure 1). 
 
  
-![Home Page](./image/tutorial/homepage.PNG)
+![Home Page](./image/tutorial/homepage2.0.PNG)
  _**Figure 1.** Homepage of DiVenn_
 
 
