@@ -10,7 +10,7 @@ Sun, Liang, et al.
 # Contact Us
 If you have any questions, please contact Perdeep Mehta: pkmehta@noble.org
 # Tutorial
-> **Version 1.0**
+> **[Version 1.0](http://divenn.noble.org/v1/)**
 
 Click below to watch a tutorial video.
 
