@@ -9,7 +9,7 @@ Sun, Liang, et al.
 - Zach Robinson: ztrobinson@noble.org
 - Xueqiong Li: xli@noble.org
 # Contact Us
-If you have any questions, please contact Perdeep Mehta: pkmehta@noble.org
+If you have any questions, please contact Liang Sun: sunliang@udel.edu
 # Tutorial
 > **[Version 1.0](http://divenn.noble.org/v1/)**
 
