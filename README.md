@@ -1,3 +1,5 @@
+# Important News
+DiVenn has been transferred to https://divenn.tch.harvard.edu
 # About DiVenn
 DiVenn is an interactive and integrated web-based tool for comparing gene lists
 # Citation
