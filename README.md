@@ -13,7 +13,7 @@ Sun, Liang, et al.
 # Contact Us
 If you have any questions, please contact Liang Sun: sunliang@udel.edu
 # Tutorial
-> **[Version 1.0](http://divenn.noble.org/v1/)**
+> **[Version 1.0](https://divenn.tch.harvard.edu/)**
 
 Click below to watch a tutorial video.
 
